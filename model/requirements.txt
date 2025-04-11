@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+torch
+torchvision
+torchaudio
+matplotlib
+seaborn
+shap
+flask
+gunicorn
+uvicorn
+fastapi
