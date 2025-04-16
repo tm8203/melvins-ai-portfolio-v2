@@ -151,7 +151,7 @@ if page == "about-me":
             Feel free to connect via LinkedIn (link below) or email me at **tejada.melvin@gmail.com**. 
             """, unsafe_allow_html=True)
     
-        st.write("[LinkedIn](https://www.linkedin.com/in/melvin-tejada/) | [Resume](https://github.com/tm8203/melvin-ai-portfolio/blob/main/melvins-resume-2025.pdf)")
+        st.write("[LinkedIn](https://www.linkedin.com/in/melvin-tejada/) | [Technical Resume](https://github.com/tm8203/melvin-ai-portfolio/blob/main/melvins-resume-2025.pdf)") | [Non-Technical Resume](https://github.com/tm8203/melvin-ai-portfolio/blob/main/melvins-resume-2025.pdf)")
 
 elif page == "fraud-model":
     st.title("AI Fraud Model Demo")
