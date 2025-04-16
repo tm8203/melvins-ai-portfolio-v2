@@ -148,9 +148,7 @@ if page == "about-me":
     
         st.write("[LinkedIn](https://www.linkedin.com/in/melvin-tejada/) | [Technical Resume](https://github.com/tm8203/melvin-ai-portfolio/blob/main/melvins-resume-2025.pdf) | [Non-Technical Resume](https://github.com/tm8203/melvins-ai-portfolio-v2/blob/main/melvin-resume-2025-nontechnical.pdf)")
 
-        st.write("🔍 Python version:", platform.python_version())
-        st.write("📦 pandas version:", pd.__version__)
-        st.write("📦 nltk version:", __import__('nltk').__version__)
+        st.write("🔍 Python version:", platform.python_version()) | st.write("📦 pandas version:", pd.__version__) | st.write("📦 nltk version:", __import__('nltk').__version__)
 
 
 elif page == "fraud-model":
