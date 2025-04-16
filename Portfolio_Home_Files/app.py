@@ -146,11 +146,31 @@ if page == "about-me":
             Feel free to connect via LinkedIn (link below) or email me at **tejada.melvin@gmail.com**. 
             """, unsafe_allow_html=True)
     
-        st.write("[LinkedIn](https://www.linkedin.com/in/melvin-tejada/) | [Technical Resume](https://github.com/tm8203/melvin-ai-portfolio/blob/main/melvins-resume-2025.pdf) | [Non-Technical Resume](https://github.com/tm8203/melvins-ai-portfolio-v2/blob/main/melvin-resume-2025-nontechnical.pdf)")
-        <br><br>
-        st.write("🔍 Python version:", platform.python_version()) 
-        st.write("📦 pandas version:", pd.__version__) 
-        st.write("📦 nltk version:", __import__('nltk').__version__)
+        #st.write("[LinkedIn](https://www.linkedin.com/in/melvin-tejada/) | [Technical Resume](https://github.com/tm8203/melvin-ai-portfolio/blob/main/melvins-resume-2025.pdf) | [Non-Technical Resume](https://github.com/tm8203/melvins-ai-portfolio-v2/blob/main/melvin-resume-2025-nontechnical.pdf)")
+        #<br><br>
+        #st.write("🔍 Python version:", platform.python_version()) 
+        #st.write("📦 pandas version:", pd.__version__) 
+        #st.write("📦 nltk version:", __import__('nltk').__version__)
+
+
+        st.markdown(
+            """
+            [LinkedIn](https://www.linkedin.com/in/melvin-tejada/) | 
+            [Technical Resume](https://github.com/tm8203/melvin-ai-portfolio/blob/main/melvins-resume-2025.pdf) | 
+            [Non-Technical Resume](https://github.com/tm8203/melvin-ai-portfolio-v2/blob/main/melvin-resume-2025-nontechnical.pdf)  
+
+            <br><br>
+
+            🔍 Python version: {python_version}  
+            📦 pandas version: {pandas_version}  
+            📦 nltk version: {nltk_version}
+            """.format(
+                python_version=platform.python_version(),
+                pandas_version=pd.__version__,
+                nltk_version=__import__('nltk').__version__,
+            ),
+            unsafe_allow_html=True
+        )
 
 
 elif page == "fraud-model":
